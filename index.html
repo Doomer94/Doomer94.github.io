@@ -1,129 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>GoHub</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet">
-<style type="text/css">
-body {
-	background: #19171c;
-	margin: 0;
-	padding: 0;
-	font-family: tahoma;
-	color: #fff;
-}
-
-a {
-	color: #4b367c;
-	padding: 2px 10px;
-	border: #4b367c 1px solid;
-	border-radius: 2px;
-	margin-bottom: 30px;
-	display: inline-block;
-}
-a:hover {
-	background: #4b367c;
-	color: #fff;
-}
-
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-#main {
-	text-align:center; 
-	width: 300px;
-	margin: 200px auto;
-}
-.content {
-	display: inline-block;
-	height: 70px;
-	width: 250px;
-	border-radius: 4px;
-	position: relative;
-	overflow: hidden;
-	border: 0px solid #4b367c;
-}
-
-.icon {
-	position: absolute;
-	top: 11px;
-	left: 10px;
-	animation: icon-anim  .5s forwards;
-}
-.title {
-	position: absolute;
-	top: 11px;
-	left: 70px;
-	font-size: 12px;
-	font-weight: 100;
-	opacity: .5;	
-}
-.nick {
-	position: absolute;
-	top: 25px;
-	left: 70px;
-	font-size: 24px;
-	font-weight: bold;
-}
-.bg-color {
-	background: #4b367c;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 15px;
-	left: 15px;
-	border-radius: 50%;
-	transform: scale(0);
-	/*transition: .5s;*/
-	animation: bg-color-anim .75s forwards;
-	animation-delay: .25s;
-}
-
-@keyframes bg-color-anim {
-	0%   { transform: scale(0); }
-	100% { transform: scale(12); }
-}
-
-@keyframes icon-anim {
-	0%   { transform: scale(0); }
-	100% { transform: scale(1); }
-}
-</style>
 <body>
-
-	<div id="main">
-		<a onclick="scale()">Test</a>
-
-		<div class="content">
-			<div class="bg-color"></div>
-			<div class="icon"><i class="material-icons md-light md-48">face</i></div>
-			<div class="title">Новый подписчик</div>
-			<div class="nick">Nickname</div>
+	<header>
+		<div class="container">
+			<div id="logo">
+				
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Product</a></li>
+					<li><a href="">Customers</a></li>
+					<li><a href="">Pricing</a></li>
+					<li><a href="">Docs</a></li>
+					<li><span><a href="">Sign in</a></span></li>
+				</ul>
+			</nav>
 		</div>
-
-
-		
-		
-	</div>
-
-
-
-	<script type="text/javascript">
-		function scale(){
-			var div = document.createElement('div');
-			div.className = "content";
-			div.innerHTML = '<div class="bg-color"></div><div class="icon"><i class="material-icons md-light md-48">face</i></div><div class="title">Новый подписчик</div><div class="nick">Nickname</div>';
-			// main.insertBefore(div, main.children[0]);
-
-			document.getElementById('main').appendChild(div);
-		}
-	</script>
+	</header>
+	<section>
+		<div class="container">
+			<div class="main-info">
+				<h1>Balance agility with stability!</h1>
+				<p>Gohub monitors application stability, so you can make data-driven decisions on whether you should be building new features, or fixing bugs.</p>
+				<button>Get Started</button>
+				<a class="ask" href="">Questions? Talk to our team →</a>	
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container section-2">
+			<div class="row">
+				<div class="col-2">
+					<div>
+						<h2>Improve the stability of your application</h2>
+						<p>Bugsnag monitors application stability, so you can make data-driven decisions on whether you should be building new features, or fixing bugs.</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="card">
+						<img alt="Improve the stability of your application" src="img/sale.gif">
+						<h3>Improve the stability of your application</h3>
+						<p>Bugsnag monitors application stability, so you can make data-driven decisions on whether you should be building new features, or fixing bugs.</p>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-2">
+					<div class="card">
+						<img alt="Monitor online" src="img/monitor.gif">
+						<h3>Monitor online</h3>
+						<p>The platform has multiple functionalities and key features. With our intelligent system, you can approve bookings and monitor everything in your business online.</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="card">
+						<img alt="More income" src="img/more.gif">
+						<h3>More income</h3>
+						<p>Being on a digital platform is another sales channel added to strengthen your business. More work, in your hands. With our insights tools, we analyze your gear's performance in any season</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container test">
+			<div>
+				<h2>Proof makes increasing conversions simple</h2>
+				<p>Getting a conversion boost didn’t used to be this easy. Luckily, you found Proof. Now you have the tools to let your customer do the selling for you.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Higher Conversions</h3>
+				<p>Convert more website visitors into signups and purchases.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Save on Acquisition</h3>
+				<p>Your advertising spend will go further than ever before.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Increase Visitor Trust</h3>
+				<p>People trust companies they see other people buy from as well.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Social Influence</h3>
+				<p>Seeing other visitors taking action creates fear of missing out.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Higher Conversions</h3>
+				<p>Convert more website visitors into signups and purchases.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Save on Acquisition</h3>
+				<p>Your advertising spend will go further than ever before.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Increase Visitor Trust</h3>
+				<p>People trust companies they see other people buy from as well.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Social Influence</h3>
+				<p>Seeing other visitors taking action creates fear of missing out.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Higher Conversions</h3>
+				<p>Convert more website visitors into signups and purchases.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Save on Acquisition</h3>
+				<p>Your advertising spend will go further than ever before.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Increase Visitor Trust</h3>
+				<p>People trust companies they see other people buy from as well.</p>
+			</div>
+			<div>
+				<img src="img/space.gif">
+				<h3>Social Influence</h3>
+				<p>Seeing other visitors taking action creates fear of missing out.</p>
+			</div>						
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<ul>
+				<li>About us</li>
+				<li>Newsroom</li>
+				<li>Blog</li>
+				<li>Gohub API</li>
+				<li>Gift cards</li>
+				<li>Careers</li>
+				<li>Gohub vs.driving jobs</li>
+			</ul>
+			<ul>
+				<li>Offerings</li>
+				<li>Gohub Eats for food delivery</li>
+				<li>Gohub for Business</li>
+				<li>Gohub Freight</li>
+				<li>Gohub Health</li>
+			</ul>
+			<ul>
+				<li>Support</li>
+				<li>Terminos y condiciones</li>
+				<li>Privacidad</li>
+				<li>Ayuda</li>
+				<li>Connect</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
