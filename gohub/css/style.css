@@ -1,0 +1,235 @@
+@import "../fonts/brown/stylesheet.css" ;
+
+
+
+body {
+	background: url(../img/background.gif)no-repeat;
+	background-size: auto;
+	padding: 0;
+	margin: 0 auto;
+	font-family: "Brown";
+}
+
+header {
+	height: 146px;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	float: left;
+	line-height: 146px;
+}
+
+nav li a {
+	padding: 0 25px;
+	font-size: 19px;
+}
+
+nav li span a {
+	background-color: #845cff; 
+	padding: 15px 20px;
+	margin: 0 0;
+	color: #fff;
+	box-shadow: -6.691px 7.431px 20px 0px rgba(132, 92, 255, 0.2);
+	border-radius: 3px;
+}
+
+section {
+	clear: both;
+}
+
+footer {
+	width: 100%;
+	background-color: #212240;
+	color: #fff;
+	clear: both;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	color: #32325d;
+	font-size: 48px;
+}
+
+h2 {
+	color: #32325d;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+p {
+	font-size: 23px;
+	color: #525f7f;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	border-radius: 3px;
+	background-color: #845cff; 
+	border: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 15px 25px;
+	box-shadow: -6.691px 7.431px 20px 0px rgba(111, 54, 255, 0.2);
+	text-transform: uppercase;
+
+}
+
+
+/*---grid-----*/
+.container {
+	width: 1235px;
+	margin: 0 auto;
+	max-width: 90%;
+	clear: both;
+}
+
+.row {
+	margin: 0 -50px;
+}
+
+.col-2 {
+	float: left;
+	width: 50%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+/*------------*/
+#logo {
+	float: left;
+	background: url(../img/logo.gif) no-repeat;
+	background-position: 0 50%;
+	height: 146px;
+	width: 155px;
+}
+
+.main-info {
+	padding: 165px 0 0;
+	width: 475px;
+}
+
+.ask {
+	padding: 0 0 0 35px;
+	font-size: 19px;
+}
+.card {
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: -6.691px 7.431px 20px 0px rgba(212, 212, 250, 0.2);
+	box-sizing: border-box;
+	padding: 60px;
+	height: 468px;
+}
+
+.card p {
+	font-size: 18px;
+}
+
+
+.test img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin: auto;
+	background: url(../img/spray.gif);
+}
+
+.test > div > h3 {
+	padding: 20px 0 0 0;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.test > div > p {
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.test > h2 {
+	text-align: center;
+}
+
+.test > p {
+	width: 875px;
+	margin: auto;
+	text-align: center;
+	font-weight: 500;
+	font-size: 21px;
+}
+
+
+
+.test > div {
+	width: 25%;
+	float: left;
+	padding: 85px 0;
+}
+/*-g1-*/
+.test > div:nth-of-type(2) img {
+	background-position: 80px 0;
+}
+
+.test > div:nth-of-type(3) img {
+	background-position: 160px 0;
+}
+
+.test > div:nth-of-type(4) img {
+	background-position: 240px 0;
+}
+/*-g2-*/
+.test > div:nth-of-type(5) img {
+	background-position: 0 80px;
+}
+.test > div:nth-of-type(6) img {
+	background-position: 80px 80px;
+}
+
+.test > div:nth-of-type(7) img {
+	background-position: 160px 80px;
+}
+
+.test > div:nth-of-type(8) img {
+	background-position: 240px 80px;
+}
+/*-g3-*/
+.test > div:nth-of-type(9) img {
+	background-position: 0 160px;
+}
+.test > div:nth-of-type(10) img {
+	background-position: 80px 160px;
+}
+
+.test > div:nth-of-type(11) img {
+	background-position: 160px 160px;
+}
+
+.test > div:nth-of-type(12) img {
+	background-position: 240px 160px;
+}
